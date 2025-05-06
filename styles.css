@@ -2,4 +2,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header{
+    padding:10px;
+    margin: 10PX 20px;
+    display: flex;
+    justify-content: left;
+    background-color: red;
+    color: white;
+}
+.logo{
+    padding: 5px;
+    margin: 10px;  
+}
+img{
+    width: 15%;
+    height: 70%;   
+}
+.nav-bar .active{
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+    justify-items: center;  
+    text-decoration: none;
 }
