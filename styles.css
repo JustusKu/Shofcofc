@@ -4,13 +4,15 @@
     box-sizing: border-box;
     font-family: ;
 }
-.header{
-    padding:10px;
-    margin: 10PX 20px;
+.menu-bar{
+    padding: 0 2%;
+    height: 80px;
+    width: 100%;
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     background-color: red;
     color: white;
+    align-items: center;
 }
 .logo{
     padding: 5px;
@@ -20,14 +22,47 @@ img{
     width: 15%;
     height: 70%;   
 }
-.nav-bar .active{
+.menu-bar ul{
+    list-style: none;
+    display: flex;
+}
+.menu-bar ul li{
+    padding: 10px 20px;
+    position: relative;
+}
+.menu-bar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+.menu-bar ul li a:hover{
+    color: blue;
+}
+.dropdown-menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: red;
+}
+.dropdown-menu ul{
+    display: block;
+    margin: 10px;
+    
+}
+.dropdown-menu ul li{
+    width: 80px;
+    padding: 4px;
+    font-size: 5px;
+}
+.nav-bar{
     color: white;
     margin: 5px;
     padding: 10px;
     font-size: 20px;
     justify-items: center;  
-    text-decoration: none;
-    
+    text-decoration: none;  
 }
 .container{
     width: 100%;
