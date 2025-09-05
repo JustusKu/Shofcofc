@@ -50,7 +50,7 @@ body{
 }
 .navbar-container .navbar-menu li a{
     text-decoration: none;
-    color: blue;
+    color: white;
     font-size: 1.3rem;
     font-weight: 500;
     padding: 3px 20px;
@@ -60,9 +60,9 @@ body{
     white-space: nowrap;
 }
 .navbar-container .navbar-menu li a:hover, .navbar-container .navbar-menu li a.active{
-    color: white;
-    background: orangered;
-    border: 2px solid whitesmoke;
+    color: blue;
+    
+    
 }
 .navbar-toggle{
     display: none;
@@ -183,9 +183,10 @@ img{
 }
 .sidebar{
     flex: 1;
-    background-color: skyblue;
-    
-    
+    background-color: whitesmoke;
+    border-bottom: 5px solid red;
+    border-top: 5px solid red;
+
 }
 .main-container{
     flex: 4;
@@ -392,7 +393,7 @@ width: 600px;
     padding-top: 1px;
     margin-top: 20px;
     padding-bottom: 1px;
-    height: 100px;
+    height: 130px;
     
 }
 .card-footer{
@@ -409,10 +410,10 @@ width: 600px;
 .btn{
     border-radius: 10px;
     width: 100px;
-    height: 40px;
-    padding: 10px;
+    height: 30px;
+    padding: 5px;
     color: white;
-    background-color: orangered;
+    background-color: red;
     margin: 10px;
     
 }
@@ -441,7 +442,7 @@ width: 600px;
     text-decoration: none;
     font-weight: 80px;
     text-decoration: none;
-    color: blue;
+    color: white;
     font-size: 1.3rem;
     font-weight: 500;
     padding: 3px 20px;
@@ -451,9 +452,8 @@ width: 600px;
     white-space: nowrap;
 }
 .drop-down:hover{
-    color: white;
-    background: orangered;
-    border: 2px solid whitesmoke;  
+    color: blue;
+      
 }
 
 
@@ -513,41 +513,28 @@ width: 600px;
     align-items: center;
     display: inline-block;
     padding: 2px;
-    
-
-
 }
 .img6{
     width: 110%;
     height: auto;
     display: flex;
-    align-items: center;
-    
-    
-    
-    
+    align-items: center;    
 }
 .day{
-    display: inline-block;
+    display: flex;
     padding: 2px;
-    margin: 5px auto;
+    margin: 20px auto;
     text-align: center;
-    font-size: 20px;
-
-    
-
-}
-h3{
-    font-size: 30px;
-    text-align: center;
-    padding: 10px;
-    text-decoration: underline orangered;
-    
+    font-size: 15px;
+    border-bottom: 2px solid red;
 }
 h5{
     color: black;
     font-size: 30px;
     font-weight: 50px;
+}
+h5:hover{
+    color: red;
 }
 h4{
     margin: 2px;
@@ -561,6 +548,19 @@ h1{
     font-weight: 70px;
     
 }
+.imagi{
+    margin: 40px;
+    display: inline-block;
+    height: auto;
+    width: 190px;
+}
+.imagi2{
+    margin: 40px;
+    display: inline-block;
+    height: auto;
+    width: 190px;
+}
+
 
 
 
