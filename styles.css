@@ -181,6 +181,10 @@ img{
     min-height: 50px;
     border-radius: 3px;
 }
+h2{
+    font-size: 40px;
+    padding: 8px;
+}
 .sidebar{
     flex: 1;
     background-color: whitesmoke;
@@ -202,8 +206,14 @@ h4{
 }
 .main{
     min-height: 450px;
-    background: skyblue;
-    
+    background: skyblue;    
+}
+.main2{
+    min-height: 450px;
+    background: whitesmoke;  
+    margin: 10px; 
+    min-width: 100%;
+
 }
 .content{
     display: flex;
@@ -350,8 +360,8 @@ width: 600px;
 }
 #pricing h2{
     font-size: 40px;
-    text-align: center;
     padding: 8px;
+    margin: 10px;
     
 }
 #pricing p{
@@ -502,11 +512,9 @@ width: 600px;
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 .img3{
-    width: 98%;
-    height: 100%;
-    margin: 5px;
-    flex: 100%;
-    
+    width: 100%;
+    height: auto;
+    flex: 100%;    
 }
 .results {
     margin: 10px;
@@ -546,7 +554,7 @@ h1{
     text-shadow: #04AA6D;
     font-size: 50px;
     font-weight: 70px;
-    
+    text-shadow: 2px 2px 5px blue;
 }
 .imagi{
     margin: 40px;
@@ -560,7 +568,76 @@ h1{
     height: auto;
     width: 190px;
 }
+#team{
+    color: #444;
+    padding: 15px;
+    font-size: 20px;
+    padding-left: 1px ; 
+}
 
+#team{
+height: 100vh;
+width: 600px;
+
+}
+#pricing h2{
+    font-size: 40px;
+    padding: 8px;
+    margin: 10px;
+    
+}
+.name{
+    color: #444;
+    padding: 15px;
+    font-size: 20px;
+    padding-left: 1px ;
+}
+
+
+
+.card-team{
+    font-size: 20px;
+    padding: 2px;
+    display: flex;
+    margin: 4px 4px 4px 4px;
+    gap: 20px;
+    justify-content: space-between;
+    
+    
+}
+.card{
+    margin: 8px;
+    border-radius: 20px;
+    box-shadow: 4px 3px 4px whitesmoke;
+    height: 300px;
+}
+.card .card-img{
+    
+    height: 200px;
+    padding-right: 1%;
+    border-color: #444;
+    box-shadow: #444
+}
+
+.card-team{
+    text-align: left;
+    margin-left: 15px;
+    padding-top: 1px;
+    margin-top: 20px;
+    padding-bottom: 1px;
+    height: 130px;
+    
+}
+.card-foot{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.card-image img{
+    height: 350px;
+    width: 250px;
+    border-radius: 10px;
+}
 
 
 
