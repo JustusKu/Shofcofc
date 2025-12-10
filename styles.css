@@ -14,6 +14,9 @@ body{
     
     
 }
+
+
+/* navbar */
 .navbar{
     display: flex;
     align-items: center;
@@ -162,6 +165,7 @@ img{
     justify-items: center;  
     text-decoration: none;  
 }
+/* main bdy */
 .container{
     width: 100%;
     display: flex;
@@ -169,6 +173,15 @@ img{
     margin: 10px;
     gap: 10px;
     font-weight: 17px;
+}
+h1{
+    position: absolute;
+    margin-top: 550px;
+    color: white;
+    text-shadow: #04AA6D;
+    font-size: 50px;
+    font-weight: 70px;
+    text-shadow: 2px 2px 5px blue;
 }
 .container>div{
     flex: 100%;
@@ -195,7 +208,7 @@ h2{
     background-color: whitesmoke;
     border-bottom: 5px solid red;
     border-top: 5px solid red;
-
+    
 }
 .main-container{
     flex: 4;
@@ -290,6 +303,8 @@ h5{
     margin-top: .5rem;
     color: white;
 }
+
+/* footer */
 .footer{
     position: relative;
     bottom: 0;
@@ -364,7 +379,7 @@ text-align: center;
     font-size: 15px; 
 }
 
-
+/* shop area */
 #pricing{
     height: 100vh;
     width: 600px;
@@ -543,6 +558,8 @@ text-align: center;
     height: auto;
     flex: 100%;    
 }
+
+/* results section */
 .results {
     margin: 10px;
     align-items: center;
@@ -561,7 +578,8 @@ text-align: center;
     margin: 20px auto;
     text-align: center;
     font-size: 15px;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid red;    
+    
 }
 h5{
     color: black;
@@ -574,15 +592,7 @@ h5:hover{
 h4{
     margin: 2px;
 }
-h1{
-    position: absolute;
-    margin-top: 550px;
-    color: white;
-    text-shadow: #04AA6D;
-    font-size: 50px;
-    font-weight: 70px;
-    text-shadow: 2px 2px 5px blue;
-}
+
 .imagi{
     margin: 40px;
     display: inline-block;
@@ -595,7 +605,7 @@ h1{
     height: auto;
     width: 190px;
 }
-#team{
+/* #team{
     color: #444;
     padding: 15px;
     font-size: 20px;
@@ -606,19 +616,15 @@ h1{
 height: 100vh;
 width: 600px;
 
-}
-#pricing h2{
-    font-size: 40px;
-    padding: 8px;
-    margin: 10px;
-    
-}
+} */
+
 .name{
     color: #444;
     padding: 15px;
     font-size: 20px;
     padding-left: 1px ;
 }
+
 
 
 
@@ -750,6 +756,86 @@ h8{
     margin: 20px;
     font-size: 40PX;
     font-weight: bold;
+}
+
+.statistics{
+    background-color: whitesmoke;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+
+}
+.statistics img{
+    width: 60%;
+    height: 500px;
+    margin: auto;
+    justify-content: center;
+}
+.stats{
+    display: block;
+    text-align: center;
+    width: 60%;
+
+}
+.stats h2{
+    background-color: black;
+    border-top: 5px solid red;
+    font-size: 20px;
+    color: white;
+    
+}
+.stats1{
+    display: block;
+    gap: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+.stats2{
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+    font-size: 20px;
+    background-color: grey;
+    color: white;
+    
+}
+.profile{
+    justify-content: center;
+    width: 60%;
+    padding: 10px;
+    display: block;
+}
+.profile1{
+    background-color: red;
+    color: white;
+    font-size: 10px;
+}
+.profile2{
+    display: block;
+    padding-top: 10px;
+    background-color: whitesmoke;
+    
+}
+.profile3{
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 4px;
+    justify-content: space-between;
+    border-bottom: 1px solid lightblue;
+    flex-direction: column;
+}
+.profile3 h9{
+    font-weight: bold;
+    
+    
+}
+.profile3 p{
+    font-weight: 40px;
+    text-align: right;
 }
 
 
