@@ -758,12 +758,92 @@ h8{
     font-weight: bold;
 }
 
+
+/* statistics */
+
+/* Center the whole section */
+.statistics {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Player image */
+.statistics img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 2px;
+    display: block;
+    margin: 15px auto;
+}
+
+/* Container for stats */
+.stats2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   /* Desktop */
+    gap: 15px;
+    margin-top: 20px;
+
+    
+}
+
+
+
+/* Each stat box */
+.stats1 {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #f8f8f8;
+}
+
+/* Headings */
+.stats h2 {
+    margin-top: 20px;
+    font-size: 1.3rem;    
+    background-color: black;
+    border-top: 5px solid red;
+    font-size: 20px;
+    color: white;
+}
+
+/* TABLET VIEW */
+@media (max-width: 900px) {
+    .stats2 {
+        grid-template-columns: repeat(2, 1fr);  
+    }
+}
+
+/* MOBILE VIEW */
+@media (max-width: 600px) {
+    .stats2 {
+        grid-template-columns: 1fr;   /* One column */
+    }
+
+    .statistics img {
+        max-width: 220px;             /* Smaller image */
+    }
+
+    .stats1 p {
+        font-size: 0.95rem;
+    }
+}
+
+/* 
 .statistics{
     background-color: whitesmoke;
     display: block;
+    margin: 20px;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 20px;
+    
+    
+
+}
+.statistics h2{
+    font-size: 25px;
 
 }
 .statistics img{
@@ -790,16 +870,23 @@ h8{
     gap: 20px;
     padding: 10px;
     margin: 10px;
+    border-right: 1px solid whitesmoke;
+}
+
+.stats1 p{
+    padding: 5px;
 }
 .stats2{
     display: flex;
     gap: 20px;
-    align-items: baseline;
+    
     font-size: 20px;
     background-color: grey;
     color: white;
     
-}
+} */
+
+/* profile */
 .profile{
     justify-content: center;
     width: 60%;
@@ -811,7 +898,8 @@ h8{
     color: white;
     font-size: 10px;
 }
-.profile2{
+
+/* .profile2{
     display: block;
     padding-top: 10px;
     background-color: whitesmoke;
@@ -837,6 +925,133 @@ h8{
     font-weight: 40px;
     text-align: right;
 }
+ */
+
+
+/* oremo */
+/* body {
+        
+        background: #f5f5f5;
+        padding: 20px;
+    } */
+
+    .player-table {
+        width: 100%;
+        max-width: 715px;
+        border-collapse: collapse;
+        background: white;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        
+    }
+
+    .player-table td {
+        padding: 14px 10px;
+        font-size: 16px;
+    }
+
+    /* Left column (labels) */
+    .label {
+        font-weight: bold;
+        color: #003366;
+        text-transform: uppercase;
+        width: 40%;
+    }
+
+    /* Add lines like the Arsenal card */
+    tr {
+        border-bottom: 1px solid #cccccc;
+    }
+
+     /* Tablet (max-width: 768px) */
+    @media (max-width: 768px) {
+        .player-table {
+            max-width: 90%;
+        }
+
+        .player-table td {
+            font-size: 15px;
+        }
+    }
+
+    /* Mobile (max-width: 480px) */
+    @media (max-width: 480px) {
+
+        .player-table tr {
+            display: flex;
+            flex-direction: column;
+            padding: 10px 0;
+        }
+
+        .player-table td {
+            width: 100%;
+            display: block;
+        }
+
+        .label {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .player-table td:not(.label) {
+            font-size: 16px;
+            font-weight: normal;
+            margin-left: 5px;
+        }
+    }
+
+    /* Gallery container */
+.gallery {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+/* Responsive grid */
+.my-content .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Desktop */
+    gap: 15px;
+}
+
+/* Image styling */
+.img3 {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.img3:hover {
+    transform: scale(1.04);
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .my-content .content {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .my-content .content {
+        grid-template-columns: 1fr; /* 1 column */
+    }
+
+    .img3 {
+        border-radius: 8px;
+    }
+}
+    
+
 
 
 
