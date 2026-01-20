@@ -42,6 +42,39 @@
 
     </header>
 
+    <!-- stats section -->
+
+    <div class="container">
+  <h2>Player Ranking — Arsenal</h2>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab active" onclick="switchTab('goals', this)">Goals</button>
+    <button class="tab" onclick="switchTab('assists', this)">Assists</button>
+    <button class="tab" onclick="switchTab('yellow', this)">Yellow Cards</button>
+    <button class="tab" onclick="switchTab('red', this)">Red Cards</button>
+  </div>
+
+  <!-- Table -->
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Player</th>
+          <th id="stat-title">Goals ⚽</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+  </div>
+</div>
+     
+    
+
+
+
+
       <!-- footer section -->
     <footer class="footer">
         <div class="social">

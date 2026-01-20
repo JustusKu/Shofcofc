@@ -64,3 +64,79 @@ function applyZones() {
 calculatePoints();
 sortTable(9); // Sort by points
 applyZones();
+
+
+
+let currentTab = "goals";
+
+const players = [
+  { name: "Glen Juma", goals: 3, assists: 0, yellow: 0, red: 0, img: "https://via.placeholder.com/50" },
+  { name: "Wilfred Oganda", goals: 2, assists: 0, yellow: 0, red: 0, img: "https://via.placeholder.com/50" },
+  { name: "Apollo Ambani", goals: 2, assists: 0, yellow: 0, red: 0, img: "https://via.placeholder.com/50" },
+  { name: "Michael Lugalia", goals: 2, assists: 0, yellow: 0, red: 0, img: "https://via.placeholder.com/50" },
+  { name: "Yusuf Adebowale", goals: 1, assists: 0, yellow: 0, red: 0, img: "https://via.placeholder.com/50" },
+  { name: "Felix Kisanya", goals: 1, assists: 1, yellow: 0, red: 0, img: "https://via.placeholder.com/50" },
+  { name: "Brayan Obare", goals: 1, assists: 0, yellow: 0, red: 0, img: "https://via.placeholder.com/50" },
+  { name: "John Bulimo", goals: 1, assists: 1, yellow: 0, red: 0, img: "https://via.placeholder.com/50" },
+  { name: "Charles Mbaga", goals: 1, assists: 0, yellow: 0, red: 0, img: "https://via.placeholder.com/50" },
+  { name: "Moses Waweru", goals: 1, assists: 2, yellow: 0, red: 0, img: "https://via.placeholder.com/50" }
+];
+
+const tableBody = document.getElementById("table-body");
+const statTitle = document.getElementById("stat-title");
+
+function renderTable() {
+  const titles = {
+    goals: "Goals ⚽",
+    assists: "Assists 🎯",
+    yellow: "Yellow Cards 🟨",
+    red: "Red Cards 🟥"
+  };
+
+  statTitle.textContent = titles[currentTab];
+
+  players.sort((a, b) => b[currentTab] - a[currentTab]);
+
+  tableBody.innerHTML = "";
+
+  players.forEach((player, index) => {
+    tableBody.innerHTML += `
+      <tr>
+        <td>${index + 1}</td>
+        <td>
+          <div class="player">
+            <img src="${player.img}" alt="${player.name}">
+            <span>${player.name}</span>
+          </div>
+        </td>
+        <td class="editable" contenteditable data-name="${player.name}">
+          ${player[currentTab]}
+        </td>
+      </tr>
+    `;
+  });
+}
+
+function switchTab(tab, btn) {
+  currentTab = tab;
+  document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+  btn.classList.add("active");
+  renderTable();
+}
+
+/* Auto-update when editing */
+tableBody.addEventListener("input", (e) => {
+  if (!e.target.classList.contains("editable")) return;
+
+  const name = e.target.dataset.name;
+  const value = Number(e.target.innerText) || 0;
+
+  const player = players.find(p => p.name === name);
+  if (player) {
+    player[currentTab] = value;
+    renderTable();
+  }
+});
+
+/* Initial load */
+renderTable();
